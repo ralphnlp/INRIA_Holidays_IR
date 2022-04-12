@@ -7,3 +7,4 @@
 ## Methodology
 - <b>Method 1:</b> using <b>color histogram</b> for extracting feature and <b>kd-tree</b> for finding nearest neighbors.
 - <b>Method 2:</b> using <b>SIFT</b> for extracting feature and <b>matching</b> between query and images in dataset. 
+- <b>Method 3:</b> using <b>SiameNet</b>, is the best method that archive best score.
