@@ -19,7 +19,7 @@ if __name__=='__main__':
         data = {'img_path': save_path}
         print(data)
         reponse = requests.post(url, data=data).json()
-        imgs_path, time_query = reponse['result'], reponse['time_query']
+        imgs_path = reponse['result']
 
         imgs = []
         for img_path in imgs_path:
@@ -28,6 +28,5 @@ if __name__=='__main__':
             imgs.append(img)
         
         imgs = imgs[1:]
-        st.write(f'time query = {time_query}')
         st.image(imgs, width=233)
         os.system('rm -rf ./temp.jpg')
